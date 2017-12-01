@@ -10,6 +10,12 @@
 	.navbar-collapse.collapse {
 		background: inherit;
 	}
+	&.profile {
+		margin-bottom: 0;
+		& + .container-main {
+			padding-top: 90px;
+		}
+	}
 }
 
 header.home-top-header,
