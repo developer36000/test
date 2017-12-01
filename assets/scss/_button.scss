@@ -112,7 +112,7 @@
 	float: right;
 	margin-bottom: 10px;
 	border-radius: 5px !important;
-	padding: 5px 15px;
+	padding: 6px 15px;
 	i.fa, .fa {
 		margin-right: 0;
 		margin-left: 5px;
@@ -120,7 +120,7 @@
 	&:hover,
 	&:focus {
 		outline: none;
-		padding: 5px 15px;
+		padding: 6px 15px;
 		i.fa, .fa {
 			margin-right: 0;
 			margin-left: 5px;
@@ -390,6 +390,7 @@
 	}
 }
 .btn-edit {
+	margin-bottom: 35px;
 	&:before{
 		content: "\f044";
 		margin-right: 5px;

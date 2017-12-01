@@ -331,13 +331,13 @@ a {
   float: right;
   margin-bottom: 10px;
   border-radius: 5px !important;
-  padding: 5px 15px; }
+  padding: 6px 15px; }
   .btn-dropdown i.fa, .btn-dropdown .fa {
     margin-right: 0;
     margin-left: 5px; }
   .btn-dropdown:hover, .btn-dropdown:focus {
     outline: none;
-    padding: 5px 15px; }
+    padding: 6px 15px; }
     .btn-dropdown:hover i.fa, .btn-dropdown:hover .fa, .btn-dropdown:focus i.fa, .btn-dropdown:focus .fa {
       margin-right: 0;
       margin-left: 5px; }
@@ -639,19 +639,20 @@ a {
   .btn-cancel-company {
     display: none; }
 
-.btn-edit:before {
-  content: "\f044";
-  margin-right: 5px; }
-
-.btn-edit-company {
-  font-size: 18px;
-  width: auto;
-  padding: 5px 10px;
-  margin-top: 10px;
-  margin-right: 10px; }
-  .btn-edit-company:before {
+.btn-edit {
+  margin-bottom: 35px; }
+  .btn-edit:before {
     content: "\f044";
-    margin: 0; }
+    margin-right: 5px; }
+  .btn-edit-company {
+    font-size: 18px;
+    width: auto;
+    padding: 5px 10px;
+    margin-top: 10px;
+    margin-right: 10px; }
+    .btn-edit-company:before {
+      content: "\f044";
+      margin: 0; }
 
 .btn-save {
   color: #3cbbb1;
@@ -2517,6 +2518,19 @@ input[type=file].input-drag.big {
   line-height: 21px;
   font-family: "RobotoRegular", sans-serif; }
 
+.message-updated {
+  max-width: 210px;
+  text-align: center; }
+
+.company-input.media-link {
+  max-width: 210px; }
+
+.media-link-span {
+  padding: 2px 10px; }
+  .media-link-span i {
+    font-size: 26px;
+    color: #ee4266; }
+
 .dev-name-wrap {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -2567,7 +2581,8 @@ input[type=file].input-drag.big {
       display: block; }
   .company-wrap.edit-company .btn-save-company,
   .company-wrap.edit-company .btn-cancel-company {
-    display: block; }
+    display: block;
+    text-align: right; }
   .company-wrap.edit-company .profile-name,
   .company-wrap.edit-company .company-name,
   .company-wrap.edit-company .company-input,
@@ -2836,8 +2851,46 @@ button.close {
   padding: 10px 15px;
   border-bottom: 1px solid rgba(42, 30, 92, 0.4); }
 
+.company-item .company-link {
+  color: #3cbbb1; }
+
 .modal-footer {
   border-top: 1px solid rgba(42, 30, 92, 0.4); }
+
+/*Developer page media */
+@media screen and (max-width: 980px) {
+  .dev-name-wrap {
+    display: block;
+    -webkit-box-align: left;
+    -webkit-align-items: left;
+    -ms-flex-align: left;
+    align-items: left; } }
+
+@media screen and (max-width: 767px) {
+  .darkHeader {
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
+  .social-links.profile {
+    display: inline-block; }
+    .social-links.profile li {
+      margin: 0 20px; }
+  .edit-profile {
+    z-index: 0; }
+  .btn-appl-list {
+    margin-left: 15px; }
+  .profile-title {
+    padding-left: 15px; } }
+
+@media screen and (max-width: 480px) {
+  .social-links.profile {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .social-links.profile li {
+      margin: 0; } }
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
